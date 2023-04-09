@@ -47,6 +47,7 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "rtc.h"
 
 // Menu actions
 enum
@@ -141,6 +142,7 @@ static void Task_WaitForBattleTowerLinkSave(u8 taskId);
 static bool8 FieldCB_ReturnToFieldStartMenu(void);
 
 static const struct WindowTemplate sSafariBallsWindowTemplate = {0, 1, 1, 9, 4, 0xF, 8};
+static const struct WindowTemplate sStartMenuWindowTemplate = {0, 1, 1, 4, 2, 0xF, 8}; // Parámetros de la ventana extra 10/04/2023
 
 static const u8 *const sPyramidFloorNames[FRONTIER_STAGES_PER_CHALLENGE + 1] =
 {
@@ -248,6 +250,7 @@ static void ShowSaveInfoWindow(void);
 static void RemoveSaveInfoWindow(void);
 static void HideStartMenuWindow(void);
 static void HideStartMenuDebug(void);
+static void ShowStartMenuExtraWindow(void);
 
 void SetDexPokemonPokenavFlags(void) // unused
 {
@@ -321,6 +324,7 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
     AddStartMenuAction(MENU_ACTION_EXIT);
+    ShowStartMenuExtraWindow();
 }
 
 static void BuildDebugStartMenu(void)
@@ -433,18 +437,22 @@ static void ShowPyramidFloorWindow(void)
     CopyWindowToVram(sBattlePyramidFloorWindowId, COPYWIN_GFX);
 }
 
-static void RemoveExtraStartMenuWindows(void)
+static void RemoveExtraStartMenuWindows(void) //Modificado el 10/04/2023
 {
     if (GetSafariZoneFlag())
     {
         ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
-        CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
+        CopyWindowToVram(sSafariBallsWindowId, 2);
         RemoveWindow(sSafariBallsWindowId);
-    }
-    if (InBattlePyramid())
+    }else if (InBattlePyramid()) //Antes eran dos if separados
     {
         ClearStdWindowAndFrameToTransparent(sBattlePyramidFloorWindowId, FALSE);
         RemoveWindow(sBattlePyramidFloorWindowId);
+    }
+    else{ //Borra de la pantalla la venta auxiliar de la hora
+        ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
+        RemoveWindow(sSafariBallsWindowId);   
+        
     }
 }
 
@@ -1459,4 +1467,14 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 {
     list[*pos] = newEntry;
     (*pos)++;
+}
+
+static void ShowStartMenuExtraWindow(void) // Función que carga una ventana auxiliar en el menú de pausa. 10/04/2023
+{   
+    sSafariBallsWindowId = AddWindow(&sStartMenuWindowTemplate);
+    PutWindowTilemap(sSafariBallsWindowId);
+    DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
+    FormatDecimalTimeWOSeconds(gStringVar4, Rtc_GetCurrentHour(), Rtc_GetCurrentMinute());                                     
+    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
+    CopyWindowToVram(sSafariBallsWindowId, 2);
 }
