@@ -5331,6 +5331,15 @@ static const struct SpriteFrameImage sPicTable_DeoxysOld[] = {
     overworld_frame(gObjectEventPic_DeoxysOld, 4, 4, 0),
 };
 
+static const struct SpriteFrameImage sPicTable_Turtwig[] = {
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Turtwig, 4, 4, 5),
+};
+
 static const struct SpriteFrameImage sPicTable_MewOld[] = {
     overworld_frame(gObjectEventPic_MewOld, 2, 4, 0),
     overworld_frame(gObjectEventPic_MewOld, 2, 4, 1),

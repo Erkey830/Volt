@@ -1979,6 +1979,9 @@ $(OBJEVENTGFXDIR)/pokemon/jirachi.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/deoxys.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/pokemon/turtwig.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(MISCGFXDIR)/emotes.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
