@@ -340,7 +340,7 @@ const u32 gBattleAnimSpriteGfx_BlackSmoke[] = INCBIN_U32("graphics/battle_anims/
 const u32 gBattleAnimSpritePal_BlackSmoke[] = INCBIN_U32("graphics/battle_anims/sprites/black_smoke.gbapal.lz");
 
 const u32 gBattleAnimSpriteGfx_BlackBall[] = INCBIN_U32("graphics/battle_anims/sprites/black_ball.4bpp.lz");
-const u32 gBattleAnimSpritePal_BlackBall[] = INCBIN_U32("graphics/battle_anims/sprites/black_ball.bin");
+const u32 gBattleAnimSpritePal_BlackBall[] = INCBIN_U32("graphics/battle_anims/sprites/black_ball.gbapal.lz");
 
 const u32 gBattleAnimSpritePal_Glass[] = INCBIN_U32("graphics/battle_anims/sprites/glass.gbapal.lz");
 const u32 gBattleAnimSpriteGfx_Glass[] = INCBIN_U32("graphics/battle_anims/sprites/glass.4bpp.lz");
@@ -576,7 +576,7 @@ const u16 gBattleAnimUnused_Unknown2[] = INCBIN_U16("graphics/battle_anims/unuse
 const u16 gBattleAnimUnused_Unknown3[] = INCBIN_U16("graphics/battle_anims/unused/unknown_3.bin");
 
 const u32 gBattleAnimUnusedGfx_LineSketch2[] = INCBIN_U32("graphics/battle_anims/unused/line_sketch_2.8bpp.lz");
-const u16 gBattleAnimUnusedPal_LineSketch2[] = INCBIN_U16("graphics/battle_anims/unused/line_sketch_2_pal.bin");
+const u16 gBattleAnimUnusedPal_LineSketch2[] = INCBIN_U16("graphics/battle_anims/unused/line_sketch_2.gbapal.lz");
 const u32 gBattleAnimUnusedTilemap_LineSketch2[] = INCBIN_U32("graphics/battle_anims/unused/line_sketch_2.bin.lz");
 
 const u32 gBattleAnimSpriteGfx_BlueLines[] = INCBIN_U32("graphics/battle_anims/sprites/blue_lines.4bpp.lz");
@@ -1744,6 +1744,41 @@ const u16 gPokedexSearchMenu_Pal[] = INCBIN_U16("graphics/pokedex/search_menu.gb
 const u32 gPokedexSearchMenu_Gfx[] = INCBIN_U32("graphics/pokedex/search_menu.4bpp.lz");
 const u32 gPokedexSearchMenuNational_Tilemap[] = INCBIN_U32("graphics/pokedex/search_menu_national.bin.lz");
 const u32 gPokedexSearchMenuHoenn_Tilemap[] = INCBIN_U32("graphics/pokedex/search_menu_hoenn.bin.lz");
+// Pokedex HGSS
+const u16 gPokedexPlusHGSS_Default_Pal[]             = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_default.gbapal");
+const u16 gPokedexPlusHGSS_National_Pal[]            = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_national.gbapal");
+const u16 gPokedexPlusHGSS_MenuSearch_Pal[]          = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_search_menu.gbapal");
+const u16 gPokedexPlusHGSS_SearchResults_Pal[]       = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_search_results.gbapal");
+const u16 gPokedexPlusHGSS_Default_dark_Pal[]             = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_default_dark.gbapal");
+const u16 gPokedexPlusHGSS_National_dark_Pal[]            = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_national_dark.gbapal");
+const u16 gPokedexPlusHGSS_MenuSearch_dark_Pal[]          = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_search_menu_dark.gbapal");
+const u16 gPokedexPlusHGSS_SearchResults_dark_Pal[]       = INCBIN_U16("graphics/pokedex/hgss/HGSS_palette_search_results_dark.gbapal");
+const u32 gPokedexPlusHGSS_MenuList_Gfx[]        = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu_list.4bpp.lz");
+const u32 gPokedexPlusHGSS_MenuList_DECA_Gfx[]   = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu_list_DECA.4bpp.lz");
+const u32 gPokedexPlusHGSS_Interface_Gfx[]       = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_interface.4bpp.lz");
+const u32 gPokedexPlusHGSS_Interface_DECA_Gfx[]  = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_interface_DECA.4bpp.lz");
+const u32 gPokedexPlusHGSS_Menu_1_Gfx[]      = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu1.4bpp.lz");
+const u32 gPokedexPlusHGSS_Menu_2_Gfx[]      = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu2.4bpp.lz");
+const u32 gPokedexPlusHGSS_Menu_3_Gfx[]      = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu3.4bpp.lz");
+const u32 gPokedexPlusHGSS_MenuSearch_Gfx[]          = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu_search.4bpp.lz");
+const u32 gPokedexPlusHGSS_MenuSearch_DECA_Gfx[]     = INCBIN_U32("graphics/pokedex/hgss/HGSS_tileset_menu_search_DECA.4bpp.lz");
+const u32 gPokedexPlusHGSS_StartMenuMain_Tilemap[]           = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_start_menu.bin.lz");
+const u32 gPokedexPlusHGSS_StartMenuSearchResults_Tilemap[]  = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_start_menu_search_results.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenSelectBarSubmenu_Tilemap[]          = INCBIN_U32("graphics/pokedex/hgss/HGSS_SelectBar.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenSelectBarSubmenu_Tilemap_Clear[]    = INCBIN_U32("graphics/pokedex/hgss/HGSS_SelectBar_clear.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenList_Tilemap[]          = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_list_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenListUnderlay_Tilemap[]  = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_list_screen_underlay.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenInfo_Tilemap[]          = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_info_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenStats_Tilemap[]         = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_stats_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenEvolution_Tilemap[]     = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_evo_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenEvolution_Tilemap_PE[]  = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_evo_screen_PE.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenForms_Tilemap[]         = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_forms_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenCry_Tilemap[]           = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_cry_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenSize_Tilemap[]          = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_size_screen.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenSearchHoenn_Tilemap[]   = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_search_screen_hoenn.bin.lz");
+const u32 gPokedexPlusHGSS_ScreenSearchNational_Tilemap[] = INCBIN_U32("graphics/pokedex/hgss/HGSS_tilemap_search_screen_national.bin.lz");
+
+
 
 const u16 gSummaryScreen_MoveEffect_Battle_Tilemap[] = INCBIN_U16("graphics/summary_screen/effect_battle.bin");
 const u16 gSummaryScreen_MoveEffect_Contest_Tilemap[] = INCBIN_U16("graphics/summary_screen/effect_contest.bin");
@@ -1917,10 +1952,10 @@ const u32 gNamingScreenKeyboardSymbols_Tilemap[] = INCBIN_U32("graphics/naming_s
 const u16 gUnionRoomChat_Background_Pal[] = INCBIN_U16("graphics/union_room_chat/background.gbapal");
 const u32 gUnionRoomChat_Background_Gfx[] = INCBIN_U32("graphics/union_room_chat/background.4bpp.lz");
 const u32 gUnionRoomChat_Background_Tilemap[] = INCBIN_U32("graphics/union_room_chat/background.bin.lz");
-const u16 gUnionRoomChat_Window_Pal1[] = INCBIN_U16("graphics/union_room_chat/window_1.gbapal");
-const u16 gUnionRoomChat_Window_Pal2[] = INCBIN_U16("graphics/union_room_chat/window_2.gbapal");
-const u32 gUnionRoomChat_Border_Gfx[] = INCBIN_U32("graphics/union_room_chat/border.4bpp.lz");
-const u32 gUnionRoomChat_Border_Tilemap[] = INCBIN_U32("graphics/union_room_chat/border.bin.lz");
+const u16 gUnionRoomChat_InputText_Pal[] = INCBIN_U16("graphics/union_room_chat/input_text.gbapal");
+const u16 gUnionRoomChat_Keyboard_Pal[] = INCBIN_U16("graphics/union_room_chat/keyboard.gbapal");
+const u32 gUnionRoomChat_Keyboard_Gfx[] = INCBIN_U32("graphics/union_room_chat/keyboard.4bpp.lz");
+const u32 gUnionRoomChat_Keyboard_Tilemap[] = INCBIN_U32("graphics/union_room_chat/keyboard.bin.lz");
 const u32 gUnionRoomChat_RButtonLabels[] = INCBIN_U32("graphics/union_room_chat/r_button_labels.4bpp.lz");
 
 const u16 gTilesetPalettes_General[][16] =
