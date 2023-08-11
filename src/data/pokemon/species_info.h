@@ -32,7 +32,7 @@
         .eggCycles = 10,                                                   \
         .friendship = STANDARD_FRIENDSHIP,                                 \
         .growthRate = GROWTH_MEDIUM_FAST,                                  \
-        .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FAIRY},                  \
+        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FAIRY},                  \
         .abilities = {ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD},\
         .bodyColor = BODY_COLOR_YELLOW,                                    \
         .noFlip = flip,                                                    \
@@ -57,7 +57,7 @@
         .eggCycles = 10,                                                   \
         .friendship = STANDARD_FRIENDSHIP,                                 \
         .growthRate = GROWTH_MEDIUM_FAST,                                  \
-        .eggGroups = {EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},    \
+        .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},    \
         .abilities = {ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD},\
         .bodyColor = BODY_COLOR_YELLOW,                                    \
         .noFlip = flip,                                                    \
@@ -22202,7 +22202,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities = {ABILITY_PRIMORDIAL_SEA, ABILITY_PRIMORDIAL_SEA},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
-        .flags = SPECIES_FLAG_LEGENDARY,
+        .flags = SPECIES_FLAG_LEGENDARY | SPECIES_FLAG_PRIMAL_REVERSION,
     },
 
     [SPECIES_GROUDON_PRIMAL] =
@@ -22225,7 +22225,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities = {ABILITY_DESOLATE_LAND, ABILITY_DESOLATE_LAND},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
-        .flags = SPECIES_FLAG_LEGENDARY,
+        .flags = SPECIES_FLAG_LEGENDARY | SPECIES_FLAG_PRIMAL_REVERSION,
     },
 
     [SPECIES_RATTATA_ALOLAN] =

@@ -8031,6 +8031,12 @@ extern const u32 gItemIcon_RibbonSweet[];
 extern const u32 gItemIconPalette_RibbonSweet[];
 extern const u32 gItemIcon_Everstone[];
 extern const u32 gItemIconPalette_Everstone[];
+extern const u32 gItemIcon_BlackAugurite[];
+extern const u32 gItemIconPalette_BlackAugurite[];
+extern const u32 gItemIcon_LinkingCord[];
+extern const u32 gItemIconPalette_LinkingCord[];
+extern const u32 gItemIcon_PeatBlock[];
+extern const u32 gItemIconPalette_PeatBlock[];
 // Nectars
 extern const u32 gItemIcon_RedNectar[];
 extern const u32 gItemIconPalette_RedNectar[];
@@ -8906,6 +8912,8 @@ extern const u32 gItemIcon_GriseousCore[];
 extern const u32 gItemIconPalette_GriseousCore[];
 extern const u32 gItemIcon_LustrousGlobe[];
 extern const u32 gItemIconPalette_LustrousGlobe[];
+extern const u32 gItemIcon_BerserkGene[];
+extern const u32 gItemIconPalette_BerserkGene[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
@@ -8949,7 +8957,7 @@ extern const u32 gIntroGroudon_Gfx[];
 extern const u32 gIntroGroudon_Tilemap[];
 extern const u32 gIntroLegendBg_Gfx[];
 extern const u32 gIntroGroudonBg_Tilemap[];
-extern const u8 gIntro3Bg_Pal[0x200];
+extern const u8 ALIGNED(2) gIntro3Bg_Pal[0x200];
 extern const u32 gIntroKyogre_Gfx[];
 extern const u32 gIntroKyogre_Tilemap[];
 extern const u32 gIntroKyogreBg_Tilemap[];
@@ -10458,8 +10466,8 @@ extern const u32 gPokenavOptions_Gfx[];
 extern const u16 gPokenavOptions_Pal[];
 
 // Battle Factory Screen
-extern const u8 gFrontierFactorySelectMenu_Gfx[];
-extern const u8 gFrontierFactorySelectMenu_Tilemap[];
+extern const u16 gFrontierFactorySelectMenu_Gfx[];
+extern const u16 gFrontierFactorySelectMenu_Tilemap[];
 extern const u16 gFrontierFactorySelectMenu_Pal[];
 
 // Object event pals
