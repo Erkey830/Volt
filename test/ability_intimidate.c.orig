@@ -14,7 +14,11 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
+<<<<<<< HEAD
         OPPONENT(SPECIES_ARBOK) { Ability(ability); };
+=======
+        OPPONENT(SPECIES_ARBOK) { Ability(ability); }
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
     } WHEN {
         TURN { SWITCH(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -23,11 +27,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
         {
             ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-<<<<<<< HEAD
             MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
-=======
-            MESSAGE("Foe Staraptor's Intimidate cuts Wobbuffet's ATTACK!");
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -41,13 +41,15 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
     PARAMETRIZE { ability = ABILITY_INTIMIDATE; }
     PARAMETRIZE { ability = ABILITY_SHED_SKIN; }
     GIVEN {
+<<<<<<< HEAD
         PLAYER(SPECIES_WOBBUFFET) { Speed(2); };
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); };
-<<<<<<< HEAD
         OPPONENT(SPECIES_ARBOK) { Ability(ability); Speed(1); };
 =======
-        OPPONENT(SPECIES_STARAPTOR) { Ability(ability); Speed(1); };
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
+        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_ARBOK) { Ability(ability); Speed(1); }
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -57,11 +59,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
         {
             ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-<<<<<<< HEAD
             MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
-=======
-            MESSAGE("Foe Staraptor's Intimidate cuts Wobbuffet's ATTACK!");
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -73,43 +71,43 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
 {
     GIVEN {
         ASSUME(gBattleMoves[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
+<<<<<<< HEAD
         PLAYER(SPECIES_WOBBUFFET) { };
         PLAYER(SPECIES_WOBBUFFET) { HP(1); };
-<<<<<<< HEAD
         PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); };
         PLAYER(SPECIES_ABRA);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
         OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); };
-=======
-        PLAYER(SPECIES_STARAVIA) { Ability(ABILITY_INTIMIDATE); };
-        PLAYER(SPECIES_ABRA);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
-        OPPONENT(SPECIES_STARAPTOR) { Ability(ABILITY_INTIMIDATE); };
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
         TURN { MOVE(playerLeft, MOVE_CELEBRATE);}
+=======
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_ABRA);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
+        TURN { MOVE(playerLeft, MOVE_CELEBRATE); }
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
     } SCENE {
         HP_BAR(playerLeft, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, playerLeft);
         // Everyone faints.
 
-<<<<<<< HEAD
         MESSAGE("Go! Ekans!");
         MESSAGE("2 sent out Arbok!");
-=======
-        MESSAGE("Go! Staravia!");
-        MESSAGE("2 sent out Staraptor!");
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
         MESSAGE("Go! Abra!");
         MESSAGE("2 sent out Wynaut!");
 
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-<<<<<<< HEAD
         MESSAGE("Ekans's Intimidate cuts Foe Arbok's attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Ekans's Intimidate cuts Foe Wynaut's attack!");
@@ -127,10 +125,17 @@ SINGLE_BATTLE_TEST("Intimidate and Eject Button force the opponent to Attack")
     GIVEN {
         ASSUME(gItems[ITEM_EJECT_BUTTON].holdEffect == HOLD_EFFECT_EJECT_BUTTON);
         PLAYER(SPECIES_WOBBUFFET);
+<<<<<<< HEAD
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); };
         OPPONENT(SPECIES_HITMONTOP) { Moves(MOVE_TACKLE); };
     } WHEN {
         TURN { 
+=======
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
+        OPPONENT(SPECIES_HITMONTOP) { Moves(MOVE_TACKLE); }
+    } WHEN {
+        TURN {
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
                MOVE(player, MOVE_QUICK_ATTACK);
                MOVE(opponent, MOVE_TACKLE);
                SEND_OUT(opponent, 1);
@@ -155,7 +160,11 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_CROAGUNK);
         PLAYER(SPECIES_WYNAUT);
+<<<<<<< HEAD
         PLAYER(SPECIES_HITMONTOP) { Ability(ABILITY_INTIMIDATE); };
+=======
+        PLAYER(SPECIES_HITMONTOP) { Ability(ABILITY_INTIMIDATE); }
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
         OPPONENT(SPECIES_RALTS);
         OPPONENT(SPECIES_AZURILL);
     } WHEN {
@@ -183,16 +192,5 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Hitmontop's Intimidate cuts Foe Azurill's attack!");
-=======
-        MESSAGE("Staravia's Intimidate cuts Foe Staraptor's ATTACK!");
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Staravia's Intimidate cuts Foe Wynaut's ATTACK!");
-
-        ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Staraptor's Intimidate cuts Staravia's ATTACK!");
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Foe Staraptor's Intimidate cuts Abra's ATTACK!");
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
     }
 }

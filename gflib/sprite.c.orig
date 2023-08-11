@@ -1604,16 +1604,15 @@ static u8 LoadSpritePalette_HandleDayNight(const struct SpritePalette *palette, 
     {
         sSpritePaletteTags[index] = palette->tag;
 <<<<<<< HEAD
-        for (i = 0; i < 16; i++) {
+        DoLoadSpritePalette(palette->data, index * 16, isDayNight);
           debugPtr[i] = sSpritePaletteTags[i];
         }
-        DoLoadSpritePalette(palette->data, index * 16);
 =======
-        DoLoadSpritePalette(palette->data, index * 16, isDayNight);
->>>>>>> b37cf51aa8822dc56dcd8398b281d3613b1f6be9
+        DoLoadSpritePalette(palette->data, PLTT_ID(index));
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
         return index;
-    }
 }
+
 
 u8 LoadSpritePalette(const struct SpritePalette *palette)
 {

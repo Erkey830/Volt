@@ -1943,6 +1943,7 @@ const u8 gText_EVO_TRADE_SPECIFIC_MON[]             = _("Traded for {STR_VAR_2}"
 const u8 gText_EVO_SPECIFIC_MAP[]                   = _("LvlUp on {STR_VAR_2}");
 const u8 gText_EVO_UNKNOWN[]                        = _("Method unknown");
 const u8 gText_EVO_NONE[]                           = _("{STR_VAR_1} has no evolution.");
+const u8 gText_EVO_FRIENDSHIP_MOVE_TYPE[]           = _("LvlUp, knows {STR_VAR_2} move");
 
 const u8 gText_FORMS_Buttons_PE[]                   = _("{A_BUTTON}FORM MODE  {START_BUTTON}EVOs");
 const u8 gText_FORMS_Buttons_Decapped_PE[]          = _("{START_BUTTON}Evos");

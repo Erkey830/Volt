@@ -399,17 +399,20 @@
 #define EFFECT_TEATIME                      393
 #define EFFECT_ATTACK_UP_USER_ALLY          394 // Howl 8th Gen
 #define EFFECT_SHELL_TRAP                   395
-<<<<<<< HEAD
 #define EFFECT_PSYBLADE                     396
 #define EFFECT_HYDRO_STEAM                  397
 #define EFFECT_HIT_SET_ENTRY_HAZARD         398
 #define EFFECT_DIRE_CLAW                    399
 #define EFFECT_BARB_BARRAGE                 400
+<<<<<<< HEAD
 
 #define NUM_BATTLE_MOVE_EFFECTS             401
 =======
+#define EFFECT_REVIVAL_BLESSING             401
+#define EFFECT_FROSTBITE_HIT                402
+#define EFFECT_SNOWSCAPE                    403
 
-#define NUM_BATTLE_MOVE_EFFECTS             396
->>>>>>> ef9223c3236d57128095f22dbd9e9b7b1660840b
+#define NUM_BATTLE_MOVE_EFFECTS             404
+>>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
 
 #endif  // GUARD_CONSTANTS_BATTLE_MOVE_EFFECTS_H
