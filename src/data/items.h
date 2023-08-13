@@ -10356,4 +10356,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
     },
+
+    [ITEM_POKE_VIAL] =
+    {
+        .name = _("POKEVIAL"),
+        .itemId = ITEM_POKE_VIAL,
+        .price = 0,
+        .registrability = TRUE,
+        .description = sPokeVialDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
+    },
 };

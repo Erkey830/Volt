@@ -1832,6 +1832,9 @@ const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
 
+const u8 gText_PokeVial[] = _("Salud restaurada.\nN.cargas: {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+const u8 gText_WithOutUsesPokeVial[] = _("No hay cargas\ndisponibles.{PAUSE_UNTIL_PRESS}");
+
 
 //HGSS_Ui PokedexPlus
 const u8 gText_Stats_Buttons[]  = _("{A_BUTTON}TOGGLE   {DPAD_UPDOWN}MOVES");
