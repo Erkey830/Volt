@@ -230,7 +230,10 @@ gScriptCmdTable::
 <<<<<<< HEAD
   .4byte ScrCmd_callfunc                  @ 0xe3
 =======
->>>>>>> 42992ca5ce4b6da00ef98a2952a40547ef8ba71e
+	.4byte ScrCmd_questmenu                         @ 0xe3
+    .4byte ScrCmd_subquestmenu                      @ 0xe4
+    .4byte ScrCmd_returnqueststate                  @ 0xe5
+>>>>>>> d3ac2e8d313ac6c993844ec484f6754c2d9e5fa1
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

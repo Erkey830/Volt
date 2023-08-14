@@ -150,7 +150,8 @@
 	.include "src/rayquaza_scene.o"
 <<<<<<< HEAD
 	.include "src/debug.o"
+	.include "src/day_night.o"
 	.include "src/pokedex_plus_hgss.o"
 =======
-	.include "src/day_night.o"
->>>>>>> b37cf51aa8822dc56dcd8398b281d3613b1f6be9
+	.include "src/quests.o"
+>>>>>>> d3ac2e8d313ac6c993844ec484f6754c2d9e5fa1
