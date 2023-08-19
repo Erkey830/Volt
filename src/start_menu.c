@@ -335,7 +335,6 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
     // AddStartMenuAction(MENU_ACTION_EXIT);
-    ShowStartMenuExtraWindow();
 }
 
 static void BuildDebugStartMenu(void)
@@ -461,8 +460,8 @@ static void RemoveExtraStartMenuWindows(void) //Modificado el 10/04/2023
     }
     else{ //Borra de la pantalla la venta auxiliar de la hora
         ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
+        CopyWindowToVram(sSafariBallsWindowId, 3);
         RemoveWindow(sSafariBallsWindowId);   
-        
     }
 }
 
@@ -667,6 +666,8 @@ static bool32 InitStartMenuStep(void)
     case 3:
         if (GetSafariZoneFlag())
             ShowSafariBallsWindow();
+        else
+            ShowStartMenuExtraWindow();
         if (InBattlePyramid())
             ShowPyramidFloorWindow();
         sInitStartMenuData[0]++;
@@ -1650,5 +1651,5 @@ static void ShowStartMenuExtraWindow(void) // Función que carga una ventana aux
     DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
     FormatDecimalTimeWOSeconds(gStringVar4, Rtc_GetCurrentHour(), Rtc_GetCurrentMinute());                                     
     AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
-    CopyWindowToVram(sSafariBallsWindowId, 2);
+    CopyWindowToVram(sSafariBallsWindowId, 3);
 }

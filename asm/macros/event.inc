@@ -1735,20 +1735,20 @@
 	.2byte \quantity
 	.endm
 
-  @ Like callnative, but function expects a ctx
-  .macro callfunc func:req
-  .byte 0xe3
-  .4byte \func
-  .endm
+    @ Like callnative, but function expects a ctx
+    .macro callfunc func:req
+    .byte 0xe3
+    .4byte \func
+    .endm
 
     .macro questmenu case:req, questId:req
-    .byte 0xe3
+    .byte 0xe4
     .byte \case
     .byte \questId
     .endm
 
     .macro subquestmenu case:req, parentId:req, childId:req
-    .byte 0xe4
+    .byte 0xe5
     .byte \case
     .2byte \parentId
     .2byte \childId
@@ -1756,7 +1756,7 @@
 
     @ Check the quest state and return a number associated with quest state
     .macro returnqueststate questId:req
-    .byte 0xe5
+    .byte 0xe6
     .byte \questId
     .endm
     
