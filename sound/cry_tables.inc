@@ -2234,6 +2234,9 @@ gCryTable::
 .else
 
 .endif
+@ Tauros-Paldea
+cry Cry_Tauros
+cry Cry_Tauros
 
 	.align 2
 gCryTable_Reverse::
@@ -4413,3 +4416,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown
 	cry_reverse Cry_Unown
 .endif
+@ Tauros-Paldea
+cry_reverse Cry_Tauros
+cry_reverse Cry_Tauros
