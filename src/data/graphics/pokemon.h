@@ -7061,7 +7061,7 @@ const u32 gMonFrontPic_Floragato[] = INCBIN_U32("graphics/pokemon/floragato/fron
 const u32 gMonPalette_Floragato[] = INCBIN_U32("graphics/pokemon/floragato/normal.gbapal.lz");
 const u32 gMonBackPic_Floragato[] = INCBIN_U32("graphics/pokemon/floragato/back.4bpp.lz");
 const u32 gMonShinyPalette_Floragato[] = INCBIN_U32("graphics/pokemon/floragato/shiny.gbapal.lz");
-// const u8 gMonIcon_Floragato[] = INCBIN_U8("graphics/pokemon/floragato/icon.4bpp");
+const u8 gMonIcon_Floragato[] = INCBIN_U8("graphics/pokemon/floragato/icon.4bpp");
 // const u8 gMonFootprint_Floragato[] = INCBIN_U8("graphics/pokemon/floragato/footprint.1bpp");
 
 const u32 gMonFrontPic_Meowscarada[] = INCBIN_U32("graphics/pokemon/meowscarada/front.4bpp.lz");
@@ -7212,7 +7212,7 @@ const u32 gMonFrontPic_Dachsbun[] = INCBIN_U32("graphics/pokemon/dachsbun/front.
 const u32 gMonPalette_Dachsbun[] = INCBIN_U32("graphics/pokemon/dachsbun/normal.gbapal.lz");
 const u32 gMonBackPic_Dachsbun[] = INCBIN_U32("graphics/pokemon/dachsbun/back.4bpp.lz");
 const u32 gMonShinyPalette_Dachsbun[] = INCBIN_U32("graphics/pokemon/dachsbun/shiny.gbapal.lz");
-// const u8 gMonIcon_Dachsbun[] = INCBIN_U8("graphics/pokemon/dachsbun/icon.4bpp");
+const u8 gMonIcon_Dachsbun[] = INCBIN_U8("graphics/pokemon/dachsbun/icon.4bpp");
 // const u8 gMonFootprint_Dachsbun[] = INCBIN_U8("graphics/pokemon/dachsbun/footprint.1bpp");
 
 const u32 gMonFrontPic_Smoliv[] = INCBIN_U32("graphics/pokemon/smoliv/front.4bpp.lz");
@@ -7756,7 +7756,7 @@ const u32 gMonFrontPic_GimmighoulRoaming[] = INCBIN_U32("graphics/pokemon/gimmig
 const u32 gMonPalette_GimmighoulRoaming[] = INCBIN_U32("graphics/pokemon/gimmighoul/roaming/normal.gbapal.lz");
 const u32 gMonBackPic_GimmighoulRoaming[] = INCBIN_U32("graphics/pokemon/gimmighoul/roaming/back.4bpp.lz");
 const u32 gMonShinyPalette_GimmighoulRoaming[] = INCBIN_U32("graphics/pokemon/gimmighoul/roaming/shiny.gbapal.lz");
-// const u8 gMonIcon_GimmighoulRoaming[] = INCBIN_U8("graphics/pokemon/gimmighoul/icon.4bpp");
+const u8 gMonIcon_GimmighoulRoaming[] = INCBIN_U8("graphics/pokemon/gimmighoul/icon.4bpp");
 // const u8 gMonFootprint_Gimmighoul[] = INCBIN_U8("graphics/pokemon/gimmighoul/footprint.1bpp");
 
 const u32 gMonFrontPic_Gholdengo[] = INCBIN_U32("graphics/pokemon/gholdengo/front.4bpp.lz");

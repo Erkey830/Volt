@@ -1255,6 +1255,113 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(OVERQWIL),
     SPECIES_TO_NATIONAL(ENAMORUS),
 #endif
+#if P_GEN_9_POKEMON == TRUE
+    SPECIES_TO_NATIONAL(SPRIGATITO),
+    SPECIES_TO_NATIONAL(FLORAGATO),
+    SPECIES_TO_NATIONAL(MEOWSCARADA),
+    SPECIES_TO_NATIONAL(FUECOCO),
+    SPECIES_TO_NATIONAL(CROCALOR),
+    SPECIES_TO_NATIONAL(SKELEDIRGE),
+    SPECIES_TO_NATIONAL(QUAXLY),
+    SPECIES_TO_NATIONAL(QUAXWELL),
+    SPECIES_TO_NATIONAL(QUAQUAVAL),
+    SPECIES_TO_NATIONAL(LECHONK),
+    SPECIES_TO_NATIONAL(OINKOLOGNE),
+    SPECIES_TO_NATIONAL(TAROUNTULA),
+    SPECIES_TO_NATIONAL(SPIDOPS),
+    SPECIES_TO_NATIONAL(NYMBLE),
+    SPECIES_TO_NATIONAL(LOKIX),
+    SPECIES_TO_NATIONAL(PAWMI),
+    SPECIES_TO_NATIONAL(PAWMO),
+    SPECIES_TO_NATIONAL(PAWMOT),
+    SPECIES_TO_NATIONAL(TANDEMAUS),
+    SPECIES_TO_NATIONAL(MAUSHOLD),
+    SPECIES_TO_NATIONAL(FIDOUGH),
+    SPECIES_TO_NATIONAL(DACHSBUN),
+    SPECIES_TO_NATIONAL(SMOLIV),
+    SPECIES_TO_NATIONAL(DOLLIV),
+    SPECIES_TO_NATIONAL(ARBOLIVA),
+    SPECIES_TO_NATIONAL(SQUAWKABILLY),
+    SPECIES_TO_NATIONAL(NACLI),
+    SPECIES_TO_NATIONAL(NACLSTACK),
+    SPECIES_TO_NATIONAL(GARGANACL),
+    SPECIES_TO_NATIONAL(CHARCADET),
+    SPECIES_TO_NATIONAL(ARMAROUGE),
+    SPECIES_TO_NATIONAL(CERULEDGE),
+    SPECIES_TO_NATIONAL(TADBULB),
+    SPECIES_TO_NATIONAL(BELLIBOLT),
+    SPECIES_TO_NATIONAL(WATTREL),
+    SPECIES_TO_NATIONAL(KILOWATTREL),
+    SPECIES_TO_NATIONAL(MASCHIFF),
+    SPECIES_TO_NATIONAL(MABOSSTIFF),
+    SPECIES_TO_NATIONAL(SHROODLE),
+    SPECIES_TO_NATIONAL(GRAFAIAI),
+    SPECIES_TO_NATIONAL(BRAMBLIN),
+    SPECIES_TO_NATIONAL(BRAMBLEGHAST),
+    SPECIES_TO_NATIONAL(TOEDSCOOL),
+    SPECIES_TO_NATIONAL(TOEDSCRUEL),
+    SPECIES_TO_NATIONAL(KLAWF),
+    SPECIES_TO_NATIONAL(CAPSAKID),
+    SPECIES_TO_NATIONAL(SCOVILLAIN),
+    SPECIES_TO_NATIONAL(RELLOR),
+    SPECIES_TO_NATIONAL(RABSCA),
+    SPECIES_TO_NATIONAL(FLITTLE),
+    SPECIES_TO_NATIONAL(ESPATHRA),
+    SPECIES_TO_NATIONAL(TINKATINK),
+    SPECIES_TO_NATIONAL(TINKATUFF),
+    SPECIES_TO_NATIONAL(TINKATON),
+    SPECIES_TO_NATIONAL(WIGLETT),
+    SPECIES_TO_NATIONAL(WUGTRIO),
+    SPECIES_TO_NATIONAL(BOMBIRDIER),
+    SPECIES_TO_NATIONAL(FINIZEN),
+    SPECIES_TO_NATIONAL(PALAFIN),
+    SPECIES_TO_NATIONAL(VAROOM),
+    SPECIES_TO_NATIONAL(REVAVROOM),
+    SPECIES_TO_NATIONAL(CYCLIZAR),
+    SPECIES_TO_NATIONAL(ORTHWORM),
+    SPECIES_TO_NATIONAL(GLIMMET),
+    SPECIES_TO_NATIONAL(GLIMMORA),
+    SPECIES_TO_NATIONAL(GREAVARD),
+    SPECIES_TO_NATIONAL(HOUNDSTONE),
+    SPECIES_TO_NATIONAL(FLAMIGO),
+    SPECIES_TO_NATIONAL(CETODDLE),
+    SPECIES_TO_NATIONAL(CETITAN),
+    SPECIES_TO_NATIONAL(VELUZA),
+    SPECIES_TO_NATIONAL(DONDOZO),
+    SPECIES_TO_NATIONAL(TATSUGIRI),
+    SPECIES_TO_NATIONAL(ANNIHILAPE),
+    SPECIES_TO_NATIONAL(CLODSIRE),
+    SPECIES_TO_NATIONAL(FARIGIRAF),
+    SPECIES_TO_NATIONAL(DUDUNSPARCE),
+    SPECIES_TO_NATIONAL(KINGAMBIT),
+    SPECIES_TO_NATIONAL(GREAT_TUSK),
+    SPECIES_TO_NATIONAL(SCREAM_TAIL),
+    SPECIES_TO_NATIONAL(BRUTE_BONNET),
+    SPECIES_TO_NATIONAL(FLUTTER_MANE),
+    SPECIES_TO_NATIONAL(SLITHER_WING),
+    SPECIES_TO_NATIONAL(SANDY_SHOCKS),
+    SPECIES_TO_NATIONAL(IRON_TREADS),
+    SPECIES_TO_NATIONAL(IRON_BUNDLE),
+    SPECIES_TO_NATIONAL(IRON_HANDS),
+    SPECIES_TO_NATIONAL(IRON_JUGULIS),
+    SPECIES_TO_NATIONAL(IRON_MOTH),
+    SPECIES_TO_NATIONAL(IRON_THORNS),
+    SPECIES_TO_NATIONAL(FRIGIBAX),
+    SPECIES_TO_NATIONAL(ARCTIBAX),
+    SPECIES_TO_NATIONAL(BAXCALIBUR),
+    SPECIES_TO_NATIONAL(GIMMIGHOUL),
+    SPECIES_TO_NATIONAL(GHOLDENGO),
+    SPECIES_TO_NATIONAL(WO_CHIEN),
+    SPECIES_TO_NATIONAL(CHIEN_PAO),
+    SPECIES_TO_NATIONAL(TING_LU),
+    SPECIES_TO_NATIONAL(CHI_YU),
+    SPECIES_TO_NATIONAL(ROARING_MOON),
+    SPECIES_TO_NATIONAL(IRON_VALIANT),
+    SPECIES_TO_NATIONAL(KORAIDON),
+    SPECIES_TO_NATIONAL(MIRAIDON),
+    SPECIES_TO_NATIONAL(WALKING_WAKE),
+    SPECIES_TO_NATIONAL(IRON_LEAVES),
+#endif
 
     // Megas
     [SPECIES_VENUSAUR_MEGA - 1] = NATIONAL_DEX_VENUSAUR,
@@ -1378,6 +1485,8 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
 #if P_GEN_7_POKEMON == TRUE
     [SPECIES_DECIDUEYE_HISUIAN - 1] = NATIONAL_DEX_DECIDUEYE,
 #endif
+    [SPECIES_WOOPER_PALDEAN - 1] = NATIONAL_DEX_WOOPER,
+    [SPECIES_TAUROS_PALDEAN - 1] = NATIONAL_DEX_TAUROS,
     // Cosplay Pikachu
     [SPECIES_PIKACHU_COSPLAY - 1] = NATIONAL_DEX_PIKACHU,
     [SPECIES_PIKACHU_ROCK_STAR - 1] = NATIONAL_DEX_PIKACHU,
@@ -1674,6 +1783,28 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     [SPECIES_ENAMORUS_THERIAN - 1] = NATIONAL_DEX_ENAMORUS,
     [SPECIES_BASCULEGION_FEMALE - 1] = NATIONAL_DEX_BASCULEGION,
 #endif
+#if P_GEN_9_POKEMON == TRUE
+    // Oinkologne
+    [SPECIES_OINKOLOGNE_FEMALE - 1] = NATIONAL_DEX_OINKOLOGNE,
+    // Maushold
+    [SPECIES_MAUSHOLD_FAMILY_OF_THREE - 1] = NATIONAL_DEX_MAUSHOLD,
+    // Squawkabilly
+    [SPECIES_SQUAWKABILLY_BLUE_PLUMAGE - 1] = NATIONAL_DEX_SQUAWKABILLY,
+    [SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE - 1] = NATIONAL_DEX_SQUAWKABILLY,
+    [SPECIES_SQUAWKABILLY_WHITE_PLUMAGE - 1] = NATIONAL_DEX_SQUAWKABILLY,
+    // Palafin
+    [SPECIES_PALAFIN_HERO - 1] = NATIONAL_DEX_PALAFIN,
+    // Tatsugiri
+    [SPECIES_TATSUGIRI_DROOPY - 1] = NATIONAL_DEX_TATSUGIRI,
+    [SPECIES_TATSUGIRI_STRETCHY - 1] = NATIONAL_DEX_TATSUGIRI,
+    // Dudunsparce
+    [SPECIES_DUDUNSPARCE_THREE_SEGMENT - 1] = NATIONAL_DEX_DUDUNSPARCE,
+    // Gimmighoul
+    [SPECIES_GIMMIGHOUL_ROAMING - 1] = NATIONAL_DEX_GIMMIGHOUL,
+#endif
+    // Tauros-Paldea
+    [SPECIES_TAUROS_PALDEAN_BLAZE_BREED - 1] = NATIONAL_DEX_TAUROS,
+    [SPECIES_TAUROS_PALDEAN_AQUA_BREED - 1] = NATIONAL_DEX_TAUROS,
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -2879,11 +3010,6 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_SNEASLER - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_OVERQWIL - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_ENAMORUS - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
-<<<<<<< HEAD
-    [SPECIES_DEOXYS_ATTACK - 1]          = ANIM_GROW_VIBRATE,
-    [SPECIES_DEOXYS_DEFENSE - 1]         = ANIM_GROW_VIBRATE,
-    [SPECIES_DEOXYS_SPEED - 1]           = ANIM_GROW_VIBRATE,
-=======
     [SPECIES_SPRIGATITO - 1] = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_FLORAGATO - 1] = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_MEOWSCARADA - 1] = ANIM_V_SQUISH_AND_BOUNCE,
@@ -2989,7 +3115,9 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_MIRAIDON - 1] = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_WALKING_WAKE - 1] = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_IRON_LEAVES - 1] = ANIM_V_SQUISH_AND_BOUNCE,
->>>>>>> 9e189eeab... Merge pull request #15 from Bassoonian/rhhspeciesreorder
+    [SPECIES_DEOXYS_ATTACK - 1]          = ANIM_GROW_VIBRATE,
+    [SPECIES_DEOXYS_DEFENSE - 1]         = ANIM_GROW_VIBRATE,
+    [SPECIES_DEOXYS_SPEED - 1]           = ANIM_GROW_VIBRATE,
 
     //Gen 4 Forms
     [SPECIES_BURMY_SANDY_CLOAK - 1]      = ANIM_V_STRETCH,
@@ -3611,7 +3739,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     checksum = CalculateBoxMonChecksum(boxMon);
     SetBoxMonData(boxMon, MON_DATA_CHECKSUM, &checksum);
     EncryptBoxMon(boxMon);
-    GetSpeciesName(speciesName, species);
+    StringCopy(speciesName, GetSpeciesName(species));
     SetBoxMonData(boxMon, MON_DATA_NICKNAME, speciesName);
     SetBoxMonData(boxMon, MON_DATA_LANGUAGE, &gGameLanguage);
     SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
@@ -4601,9 +4729,25 @@ void SetMultiuseSpriteTemplateToPokemon(u16 speciesTag, u8 battlerPosition)
     if (battlerPosition == B_POSITION_PLAYER_LEFT || battlerPosition == B_POSITION_PLAYER_RIGHT)
         gMultiuseSpriteTemplate.anims = gAnims_MonPic;
     else if (speciesTag > SPECIES_SHINY_TAG)
+<<<<<<< HEAD
         gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[speciesTag - SPECIES_SHINY_TAG];
     else
         gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[speciesTag];
+=======
+    {
+        if (gMonFrontAnimsPtrTable[speciesTag - SPECIES_SHINY_TAG] != NULL)
+            gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[speciesTag - SPECIES_SHINY_TAG];
+        else
+            gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[SPECIES_NONE];
+    }
+    else
+    {
+        if (gMonFrontAnimsPtrTable[speciesTag] != NULL)
+            gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[speciesTag];
+        else
+            gMultiuseSpriteTemplate.anims = gMonFrontAnimsPtrTable[SPECIES_NONE];
+    }
+>>>>>>> 3aaa89ce7... Changed all instances of gSpeciesNames so that it uses GetSpeciesName
 }
 
 void SetMultiuseSpriteTemplateToTrainerBack(u16 trainerPicId, u8 battlerPosition)
@@ -5791,22 +5935,9 @@ bool8 IsPokemonStorageFull(void)
     return TRUE;
 }
 
-void GetSpeciesName(u8 *name, u16 species)
+const u8 *GetSpeciesName(u16 species)
 {
-    s32 i;
-
-    for (i = 0; i <= POKEMON_NAME_LENGTH; i++)
-    {
-        if (species > NUM_SPECIES)
-            name[i] = gSpeciesNames[SPECIES_NONE][i];
-        else
-            name[i] = gSpeciesNames[species][i];
-
-        if (name[i] == EOS)
-            break;
-    }
-
-    name[i] = EOS;
+    return gSpeciesNames[SanitizeSpeciesId(species)];
 }
 
 u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex)
@@ -7097,8 +7228,8 @@ void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies)
     u8 language;
     GetMonData(mon, MON_DATA_NICKNAME, gStringVar1);
     language = GetMonData(mon, MON_DATA_LANGUAGE, &language);
-    if (language == GAME_LANGUAGE && !StringCompare(gSpeciesNames[oldSpecies], gStringVar1))
-        SetMonData(mon, MON_DATA_NICKNAME, gSpeciesNames[newSpecies]);
+    if (language == GAME_LANGUAGE && !StringCompare(GetSpeciesName(oldSpecies), gStringVar1))
+        SetMonData(mon, MON_DATA_NICKNAME, GetSpeciesName(newSpecies));
 }
 
 // The below two functions determine which side of a multi battle the trainer battles on
@@ -8722,6 +8853,19 @@ bool32 TryFormChange(u32 monId, u32 side, u16 method)
     }
 
     return FALSE;
+}
+
+u16 SanitizeSpeciesId(u16 species)
+{
+    if (species > NUM_SPECIES || !IsSpeciesEnabled(species))
+        return SPECIES_NONE;
+    else
+        return species;
+}
+
+bool32 IsSpeciesEnabled(u16 species)
+{
+    return gSpeciesInfo[species].baseHP > 0;
 }
 
 void TryToSetBattleFormChangeMoves(struct Pokemon *mon, u16 method)
