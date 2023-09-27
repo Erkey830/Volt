@@ -27186,5 +27186,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
         .flags = SPECIES_FLAG_PARADOX,
     },
+
+        [SPECIES_IRON_CROWN] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 134,
+        .baseDefense   = 60,
+        .baseSpeed     = 142,
+        .baseSpAttack  = 114,
+        .baseSpDefense = 60,
+        .types = { TYPE_STEEL, TYPE_PSYCHIC },
+        .catchRate = 5,
+        .expYield = 295,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
+        .abilities = {ABILITY_QUARK_DRIVE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = FALSE,
+        .flags = SPECIES_FLAG_PARADOX,
+    },
 #endif
 };

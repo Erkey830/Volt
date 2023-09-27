@@ -1035,6 +1035,7 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_MIRAIDON]                          = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_WALKING_WAKE]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_IRON_LEAVES]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
+    [SPECIES_IRON_CROWN]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
 #endif
     // Megas
     [SPECIES_VENUSAUR_MEGA]                = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },

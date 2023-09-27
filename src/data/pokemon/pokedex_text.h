@@ -6050,4 +6050,6 @@ const u8 gWalkingWakePokedexText[] = _(
 const u8 gIronLeavesPokedexText[] = _(
     "");
 
+const u8 gIronCrownPokedexText[] = _(
+    "");
 #endif

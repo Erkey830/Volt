@@ -1021,6 +1021,7 @@ const u8 gSpeciesNames[NUM_SPECIES][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_MIRAIDON] = _("Miraidon"),
     [SPECIES_WALKING_WAKE] = _("Walking Wa"),
     [SPECIES_IRON_LEAVES] = _("Iron Leave"),
+    [SPECIES_IRON_CROWN] = _("Iron Crown"),
 #endif
 
     // Megas

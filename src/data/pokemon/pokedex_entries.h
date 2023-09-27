@@ -12141,5 +12141,17 @@ const struct PokedexEntry gPokedexEntries[] =
         .height = 15,
         .weight = 1250,
     },
+    
+    [NATIONAL_DEX_IRON_CROWN] =
+    {
+        .description = gIronCrownPokedexText,
+        .categoryName = _("Paradox"),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .height = 15,
+        .weight = 1250,
+    },
 #endif
 };

@@ -7787,7 +7787,13 @@ extern const u32 gMonPalette_IronLeaves[];
 extern const u32 gMonBackPic_IronLeaves[];
 extern const u32 gMonShinyPalette_IronLeaves[];
 extern const u8 gMonIcon_IronLeaves[];
-extern const u8 gMonFootprint_IronLeaves[];
+extern const u8 gMonFootprint_IronCrown[];
+extern const u32 gMonFrontPic_IronCrown[];
+extern const u32 gMonPalette_IronCrown[];
+extern const u32 gMonBackPic_IronCrown[];
+extern const u32 gMonShinyPalette_IronCrown[];
+extern const u8 gMonIcon_IronCrown[];
+extern const u8 gMonFootprint_IronCrown[];
 #endif
 
 // trainer sprites

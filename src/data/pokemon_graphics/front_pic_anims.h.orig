@@ -13236,6 +13236,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MIRAIDON]                          = sAnims_Miraidon,
     [SPECIES_WALKING_WAKE]                      = sAnims_WalkingWake,
     [SPECIES_IRON_LEAVES]                       = sAnims_IronLeaves,
+    [SPECIES_IRON_CROWN]                        = sAnims_IronCrown,
 #endif
 =======
     [SPECIES_OINKOLOGNE_FEMALE] = sAnims_Oinkologne,

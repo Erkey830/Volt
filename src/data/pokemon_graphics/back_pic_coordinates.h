@@ -1058,6 +1058,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_MIRAIDON]                          = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_WALKING_WAKE]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  5 },
     [SPECIES_IRON_LEAVES]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  8 },
+    [SPECIES_IRON_CROWN]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  8 },
 #endif
 #if P_GEN_5_POKEMON == TRUE
     [SPECIES_AUDINO_MEGA]                  = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  0 },
