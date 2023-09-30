@@ -99,7 +99,7 @@ BattleFrontier_BattleTowerLobby_EventScript_LookForwardToChallenge::
   callnative UpdateFollowingPokemon
 =======
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
->>>>>>> 386667f14ac8c4dc7727eef8fc4b73a9f1a79eb0
+>>>>>>> 7b3f72f5ff6d8014c9df78771cfa9385a3fe6b57
 	release
 	end
 
@@ -123,7 +123,7 @@ BattleFrontier_BattleTowerLobby_EventScript_LostThanksForPlaying::
   callnative UpdateFollowingPokemon
 =======
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
->>>>>>> 386667f14ac8c4dc7727eef8fc4b73a9f1a79eb0
+>>>>>>> 7b3f72f5ff6d8014c9df78771cfa9385a3fe6b57
 	release
 	end
 

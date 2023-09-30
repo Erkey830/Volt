@@ -27209,5 +27209,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
         .flags = SPECIES_FLAG_PARADOX,
     },
+
+    [SPECIES_RAGING_BOLT] =
+    {
+        .baseHP        = 137,
+        .baseAttack    = 107,
+        .baseDefense   = 63,
+        .baseSpeed     = 49,
+        .baseSpAttack  = 151,
+        .baseSpDefense = 83,
+        .types = { TYPE_ELECTRIC, TYPE_DRAGON },
+        .catchRate = 5,
+        .expYield = 295,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 50,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
+        .abilities = {ABILITY_PROTOSYNTHESIS, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .noFlip = FALSE,
+        .flags = SPECIES_FLAG_PARADOX,
+    },
 #endif
 };

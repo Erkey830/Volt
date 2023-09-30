@@ -1023,6 +1023,7 @@ const u16 *const gTeachableLearnsets[NUM_SPECIES] =
     [SPECIES_WALKING_WAKE] = sWalkingWakeTeachableLearnset,
     [SPECIES_IRON_LEAVES] = sIronLeavesTeachableLearnset,
     [SPECIES_IRON_CROWN] = sIronCrownTeachableLearnset,
+    [SPECIES_RAGING_BOLT] = sRagingBoltTeachableLearnset,
 #endif
     // Megas
     [SPECIES_VENUSAUR_MEGA] = sVenusaurTeachableLearnset,

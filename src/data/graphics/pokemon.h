@@ -7843,4 +7843,11 @@ const u32 gMonShinyPalette_IronCrown[] = INCBIN_U32("graphics/pokemon/iron_crown
 const u8 gMonIcon_IronCrown[] = INCBIN_U8("graphics/pokemon/iron_crown/icon.4bpp");
 // const u8 gMonFootprint_IronCrown[] = INCBIN_U8("graphics/pokemon/iron_crown/footprint.1bpp");
 
+const u32 gMonFrontPic_RagingBolt[] = INCBIN_U32("graphics/pokemon/raging_volt/front.4bpp.lz");
+const u32 gMonPalette_RagingBolt[] = INCBIN_U32("graphics/pokemon/raging_volt/normal.gbapal.lz");
+const u32 gMonBackPic_RagingBolt[] = INCBIN_U32("graphics/pokemon/raging_volt/back.4bpp.lz");
+const u32 gMonShinyPalette_RagingBolt[] = INCBIN_U32("graphics/pokemon/raging_volt/shiny.gbapal.lz");
+const u8 gMonIcon_RagingBolt[] = INCBIN_U8("graphics/pokemon/raging_volt/icon.4bpp");
+// const u8 gMonFootprint_RagingBolt[] = INCBIN_U8("graphics/pokemon/raging_volt/footprint.1bpp");
+
 #endif

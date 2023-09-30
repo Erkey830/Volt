@@ -10601,6 +10601,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Miraidon);
 PLACEHOLDER_ANIM_SINGLE_FRAME(WalkingWake);
 PLACEHOLDER_ANIM_SINGLE_FRAME(IronLeaves);
 PLACEHOLDER_ANIM_SINGLE_FRAME(IronCrown);
+PLACEHOLDER_ANIM_SINGLE_FRAME(RagingBolt);
 #endif
 
 #define SINGLE_ANIMATION(name)                      \
@@ -11690,6 +11691,7 @@ SINGLE_ANIMATION(Miraidon);
 SINGLE_ANIMATION(WalkingWake);
 SINGLE_ANIMATION(IronLeaves);
 SINGLE_ANIMATION(IronCrown);
+SINGLE_ANIMATION(RagingBolt);
 #endif
 SINGLE_ANIMATION(VenusaurMega);
 SINGLE_ANIMATION(CHARIZARD_MEGA_X);
@@ -13238,6 +13240,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_WALKING_WAKE]                      = sAnims_WalkingWake,
     [SPECIES_IRON_LEAVES]                       = sAnims_IronLeaves,
     [SPECIES_IRON_CROWN]                       = sAnims_IronCrown,
+    [SPECIES_RAGING_BOLT]                       = sAnims_RagingBolt,
 #endif
 
     [SPECIES_EGG]         = sAnims_Egg,

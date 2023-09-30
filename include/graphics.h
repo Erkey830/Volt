@@ -7794,6 +7794,13 @@ extern const u32 gMonBackPic_IronCrown[];
 extern const u32 gMonShinyPalette_IronCrown[];
 extern const u8 gMonIcon_IronCrown[];
 extern const u8 gMonFootprint_IronCrown[];
+extern const u8 gMonFootprint_RagingBolt[];
+extern const u32 gMonFrontPic_RagingBolt[];
+extern const u32 gMonPalette_RagingBolt[];
+extern const u32 gMonBackPic_RagingBolt[];
+extern const u32 gMonShinyPalette_RagingBolt[];
+extern const u8 gMonIcon_RagingBolt[];
+extern const u8 gMonFootprint_RagingBolt[];
 #endif
 
 // trainer sprites

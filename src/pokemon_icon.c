@@ -1415,6 +1415,7 @@ const u8 *const gMonIconTable[] =
     [SPECIES_WALKING_WAKE] = gMonIcon_WalkingWake,
     [SPECIES_IRON_LEAVES] = gMonIcon_IronLeaves,
     [SPECIES_IRON_CROWN] = gMonIcon_IronCrown,
+    [SPECIES_RAGING_BOLT] = gMonIcon_RagingBolt,
 #endif
     [SPECIES_EGG] = gMonIcon_Egg,
 };
@@ -2775,6 +2776,7 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_WALKING_WAKE] = 0,
     [SPECIES_IRON_LEAVES] = 1,
     [SPECIES_IRON_CROWN] = 0,
+    [SPECIES_RAGING_BOLT] = 0,
 #endif
     [SPECIES_EGG] = 1,
 };
